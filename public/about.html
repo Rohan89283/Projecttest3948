@@ -5,296 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Rohan_AFK</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .about-theme {
-      background:
-        radial-gradient(circle at 15% 20%, rgba(0, 217, 255, 0.16), transparent 20%),
-        radial-gradient(circle at 85% 25%, rgba(123, 97, 255, 0.16), transparent 18%),
-        radial-gradient(circle at 50% 80%, rgba(255, 0, 128, 0.10), transparent 25%),
-        linear-gradient(180deg, #050816, #000000);
-      min-height: 100vh;
-      color: white;
-      overflow-x: hidden;
-    }
-
-    .about-hero {
-      max-width: 1200px;
-      margin: auto;
-      padding: 70px 20px 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: center;
-    }
-
-    .about-left h1 {
-      font-size: 56px;
-      line-height: 1.05;
-      margin-bottom: 18px;
-      text-shadow: 0 0 18px rgba(0, 217, 255, 0.35);
-    }
-
-    .about-left h1 span {
-      color: #00d9ff;
-      text-shadow:
-        0 0 10px #00d9ff,
-        0 0 20px #00d9ff,
-        0 0 35px #008cff;
-    }
-
-    .about-left p {
-      color: #d8e6ff;
-      font-size: 17px;
-      line-height: 1.85;
-      margin-bottom: 16px;
-    }
-
-    .about-badges {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin: 22px 0;
-    }
-
-    .about-badge {
-      padding: 9px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 700;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: #dff7ff;
-      box-shadow: 0 0 10px rgba(0,217,255,0.08);
-    }
-
-    .about-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 24px;
-      padding: 26px;
-      box-shadow: 0 0 24px rgba(0, 217, 255, 0.08);
-      backdrop-filter: blur(10px);
-    }
-
-    .profile-box {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .profile-box::before {
-      content: "";
-      position: absolute;
-      inset: -30%;
-      background: radial-gradient(circle, rgba(0,217,255,0.12), transparent 35%);
-      animation: profilePulse 5s linear infinite;
-    }
-
-    @keyframes profilePulse {
-      0% { transform: scale(0.6); opacity: 0.25; }
-      50% { transform: scale(1); opacity: 0.45; }
-      100% { transform: scale(1.3); opacity: 0; }
-    }
-
-    .profile-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-    }
-
-    .profile-avatar {
-      width: 140px;
-      height: 140px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-size: 42px;
-      font-weight: 800;
-      color: #001a21;
-      background: linear-gradient(135deg, #00d9ff, #7b61ff);
-      box-shadow:
-        0 0 18px rgba(0,217,255,0.4),
-        0 0 36px rgba(123,97,255,0.25);
-    }
-
-    .profile-name {
-      font-size: 30px;
-      font-weight: 800;
-      margin-bottom: 8px;
-      color: #ffffff;
-    }
-
-    .profile-role {
-      color: #9fdfff;
-      font-size: 16px;
-      margin-bottom: 18px;
-      font-weight: 700;
-    }
-
-    .profile-meta {
-      display: grid;
-      gap: 12px;
-      text-align: left;
-      margin-top: 20px;
-    }
-
-    .profile-meta div {
-      padding: 12px 14px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: #dbeafe;
-      line-height: 1.6;
-      word-break: break-word;
-    }
-
-    .resume-section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 18px 20px 90px;
-    }
-
-    .resume-title {
-      font-size: 34px;
-      margin-bottom: 18px;
-      color: #ffffff;
-    }
-
-    .slider-wrap {
-      position: relative;
-      overflow: hidden;
-      margin-top: 20px;
-    }
-
-    .slider-track {
-      display: flex;
-      gap: 22px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding-bottom: 10px;
-      scrollbar-width: none;
-    }
-
-    .slider-track::-webkit-scrollbar {
-      display: none;
-    }
-
-    .slide-card {
-      min-width: 320px;
-      max-width: 320px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 22px;
-      padding: 22px;
-      box-shadow: 0 0 18px rgba(0,217,255,0.06);
-      transition: 0.3s ease;
-    }
-
-    .slide-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 0 24px rgba(0,217,255,0.18);
-      border-color: rgba(0,217,255,0.28);
-    }
-
-    .slide-card h3 {
-      font-size: 22px;
-      margin-bottom: 14px;
-      color: #00d9ff;
-    }
-
-    .slide-card p,
-    .slide-card li {
-      color: #d7e7ff;
-      line-height: 1.8;
-      font-size: 15px;
-    }
-
-    .slide-card ul {
-      margin-left: 18px;
-    }
-
-    .slider-buttons {
-      display: flex;
-      gap: 12px;
-      justify-content: flex-end;
-      margin-bottom: 16px;
-    }
-
-    .slider-btn {
-      border: none;
-      border-radius: 12px;
-      padding: 10px 16px;
-      cursor: pointer;
-      font-weight: 800;
-      font-size: 16px;
-      background: linear-gradient(135deg, #00d9ff, #7b61ff);
-      color: #02131c;
-      box-shadow: 0 0 16px rgba(0,217,255,0.22);
-    }
-
-    .slider-btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .about-links {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-    }
-
-    .about-link {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.3s ease;
-    }
-
-    .about-link.primary {
-      background: linear-gradient(90deg, #00d9ff, #7b61ff);
-      color: #02131c;
-      box-shadow: 0 0 18px rgba(0,217,255,0.25);
-    }
-
-    .about-link.secondary {
-      border: 1px solid rgba(255,255,255,0.14);
-      color: white;
-      background: rgba(255,255,255,0.04);
-    }
-
-    .about-link:hover {
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 900px) {
-      .about-hero {
-        grid-template-columns: 1fr;
-      }
-
-      .about-left h1 {
-        font-size: 40px;
-      }
-
-      .slide-card {
-        min-width: 280px;
-        max-width: 280px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .about-left h1 {
-        font-size: 32px;
-      }
-
-      .resume-title {
-        font-size: 28px;
-      }
-    }
-  </style>
 </head>
-<body class="about-theme">
+<body class="page-theme-about">
   <div class="particles">
     <span></span><span></span><span></span><span></span>
     <span></span><span></span><span></span><span></span>
@@ -318,22 +30,23 @@
     <div class="about-left">
       <h1>About <span>Rohan_AFK</span></h1>
       <p>
-        I’m Rohan_AFK, a tech-focused creator interested in web development,
-        Python-based projects, automation, and building stylish digital experiences.
-        I enjoy creating websites, experimenting with design themes, and turning
-        ideas into working projects.
+        I’m Rohan_AFK, a creator focused on building stylish web pages,
+        experimenting with dark premium themes, and working on Python-based
+        projects, automation, and online deployment workflows.
       </p>
       <p>
-        This page is a personal profile and mini resume with a custom dark neon
-        theme, smooth slider cards, and a clean portfolio-style layout.
+        I enjoy combining clean UI design with practical development skills,
+        turning simple ideas into working websites, themed pages, and personal projects
+        that look polished and feel modern.
       </p>
 
       <div class="about-badges">
         <div class="about-badge">Web Development</div>
         <div class="about-badge">Python</div>
         <div class="about-badge">HTML / CSS</div>
+        <div class="about-badge">UI Design</div>
         <div class="about-badge">Automation</div>
-        <div class="about-badge">Creative UI</div>
+        <div class="about-badge">Deployment</div>
       </div>
 
       <div class="about-links">
@@ -350,8 +63,9 @@
 
         <div class="profile-meta">
           <div><strong>Username:</strong> @Rohan_AFK</div>
-          <div><strong>Email:</strong> RohanAFK@black.com</div>
-          <div><strong>Focus:</strong> Web development, Python, automation, UI themes, deployment projects</div>
+          <div><strong>Email:</strong> <a href="mailto:RohanAFK@black.com" style="color:#9fdfff;text-decoration:none;">RohanAFK@black.com</a></div>
+          <div><strong>Instagram:</strong> <a href="https://instagram.com/gojo_satoru.afk" target="_blank" style="color:#9fdfff;text-decoration:none;">@gojo_satoru.afk</a></div>
+          <div><strong>Focus:</strong> Web development, Python, automation, themed interfaces, and deployment projects</div>
         </div>
       </div>
     </div>
@@ -363,71 +77,107 @@
       <button class="slider-btn" id="slideRight">▶</button>
     </div>
 
-    <h2 class="resume-title">Basic Resume</h2>
+    <h2 class="resume-title">Profile & Resume</h2>
 
     <div class="slider-wrap">
       <div class="slider-track" id="sliderTrack">
         <div class="slide-card">
           <h3>Profile Summary</h3>
           <p>
-            Passionate developer with interest in creating modern websites,
-            experimenting with visual themes, and building useful digital tools.
-            Comfortable with front-end structure and Python-based development.
+            Passionate developer with a strong interest in modern website creation,
+            anime-themed interfaces, premium dark UI design, and practical Python-based work.
+            Focused on building pages that look smooth, clean, and memorable.
           </p>
         </div>
 
         <div class="slide-card">
-          <h3>Core Skills</h3>
+          <h3>Technical Skills</h3>
           <ul>
-            <li>HTML, CSS, basic JavaScript</li>
-            <li>Responsive web page design</li>
-            <li>Python scripting</li>
-            <li>Automation concepts</li>
-            <li>GitHub and deployment workflow</li>
+            <li>HTML5 page structure</li>
+            <li>CSS styling and responsive layouts</li>
+            <li>Basic JavaScript interactions</li>
+            <li>GitHub project management</li>
+            <li>Railway deployment workflow</li>
           </ul>
         </div>
 
         <div class="slide-card">
-          <h3>Programming Language</h3>
+          <h3>Programming</h3>
           <p>
-            <strong>Python</strong> is a main language of interest for scripting,
-            automation, logic building, and backend-style tasks.
+            <strong>Python</strong> is a key language of interest for scripting,
+            logic building, automation ideas, and project development.
           </p>
           <p>
-            Also familiar with web structure using HTML, CSS, and simple JS.
+            Also comfortable with HTML, CSS, and basic JavaScript for front-end work.
           </p>
         </div>
 
         <div class="slide-card">
-          <h3>Web Development</h3>
+          <h3>Web Development Focus</h3>
           <ul>
             <li>Static website creation</li>
-            <li>Custom theme design</li>
-            <li>Page layout and navigation</li>
-            <li>Interactive UI elements</li>
-            <li>Deployment on Railway</li>
+            <li>Custom anime / dark themed pages</li>
+            <li>Navigation and layout design</li>
+            <li>Interactive buttons and slider sections</li>
+            <li>Portfolio and personal page design</li>
           </ul>
         </div>
 
         <div class="slide-card">
-          <h3>Interests</h3>
+          <h3>Creative Strengths</h3>
           <ul>
-            <li>Anime-themed websites</li>
-            <li>Creative landing pages</li>
-            <li>Custom personal profile pages</li>
-            <li>Neon dark UI design</li>
-            <li>Online project building</li>
+            <li>Premium dark visual themes</li>
+            <li>Neon glow effects</li>
+            <li>Character-based page styling</li>
+            <li>Clean section organization</li>
+            <li>User-friendly design ideas</li>
           </ul>
         </div>
 
         <div class="slide-card">
-          <h3>Contact</h3>
+          <h3>Project Interests</h3>
+          <ul>
+            <li>Anime fan websites</li>
+            <li>Profile / bio pages</li>
+            <li>Showcase landing pages</li>
+            <li>Custom portfolio websites</li>
+            <li>Creative personal branding</li>
+          </ul>
+        </div>
+
+        <div class="slide-card">
+          <h3>Contact & Social</h3>
           <p><strong>Username:</strong> @Rohan_AFK</p>
           <p><strong>Email:</strong> RohanAFK@black.com</p>
+          <p><strong>Instagram:</strong> @gojo_satoru.afk</p>
           <p>
-            Available for personal projects, themed pages, and web-based creative work.
+            Open for creative projects, custom themed pages, and personal website ideas.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="dual-grid">
+      <div class="info-box">
+        <h2>What I build</h2>
+        <ul>
+          <li>Stylish personal websites</li>
+          <li>Anime and character-based pages</li>
+          <li>Custom themed About sections</li>
+          <li>Responsive layouts for mobile and desktop</li>
+          <li>Clean hosted pages deployed online</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h2>Development mindset</h2>
+        <p>
+          I like websites that are simple to use, clean to navigate, and strong in visual identity.
+          My approach is to mix creativity with structure so the final result feels premium,
+          smooth, and unique.
+        </p>
       </div>
     </div>
   </section>
