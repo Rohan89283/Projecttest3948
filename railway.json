@@ -1,0 +1,1 @@
+{"version": "nodejs14", "build": "npm install", "start": "npm start"}
