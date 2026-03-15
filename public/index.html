@@ -12,6 +12,13 @@
     <span></span><span></span><span></span><span></span>
   </div>
 
+  <div class="domain-overlay" id="domainOverlay">
+    <div class="domain-overlay-content">
+      <h2>Domain Expansion</h2>
+      <p>Unlimited Void</p>
+    </div>
+  </div>
+
   <nav>
     <div class="nav-wrap">
       <a href="index.html" class="logo">JJK <span>AFK</span></a>
@@ -34,24 +41,28 @@
         Ryomen Sukuna, and Megumi Fushiguro. Explore each character page with
         their own aura, motto, abilities, and theme.
       </p>
+
       <div class="hero-buttons">
         <a href="#characters" class="btn btn-primary">Explore Characters</a>
         <a href="gojo.html" class="btn btn-secondary">Start with Gojo</a>
+        <a href="#" class="btn btn-secondary" id="expandBtn">Domain Expansion</a>
       </div>
     </div>
 
     <div class="hero-visual">
-      <div class="six-eyes-ring"></div>
+      <div class="six-eyes-ring">
+        <div class="eye-core"></div>
+      </div>
     </div>
   </section>
 
   <section class="domain-section">
     <div class="domain-box">
-      <h2>Domain Expansion</h2>
+      <h2>JJK Theme Portal</h2>
       <p>
         Step into a cursed realm where power, fate, and destruction collide.
         From the strongest sorcerer alive to the King of Curses himself,
-        every page carries its own energy and presence.
+        every page carries its own energy, design, and presence.
       </p>
     </div>
   </section>
@@ -117,5 +128,40 @@
   <footer>
     © 2026 Rohan_AFK
   </footer>
+
+  <button class="music-btn" id="musicBtn" title="Music">🎵</button>
+
+  <audio id="bgMusic" loop>
+    <source src="music/jjk-theme.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script>
+    const expandBtn = document.getElementById("expandBtn");
+    const overlay = document.getElementById("domainOverlay");
+    const musicBtn = document.getElementById("musicBtn");
+    const bgMusic = document.getElementById("bgMusic");
+
+    expandBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      overlay.classList.add("active");
+      setTimeout(() => {
+        overlay.classList.remove("active");
+      }, 2200);
+    });
+
+    musicBtn.addEventListener("click", async function () {
+      try {
+        if (bgMusic.paused) {
+          await bgMusic.play();
+          musicBtn.textContent = "⏸";
+        } else {
+          bgMusic.pause();
+          musicBtn.textContent = "🎵";
+        }
+      } catch (err) {
+        alert("Upload a music file at public/music/jjk-theme.mp3 first.");
+      }
+    });
+  </script>
 </body>
 </html>
