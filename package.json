@@ -1,1 +1,12 @@
-{\n  "name": "my-web-server",\n  "version": "1.0.0",\n  "description": "A web server using Node.js",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js"\n  },\n  "dependencies": {\n    "express": "^4.17.1",\n    "cors": "^2.8.5",\n    "dotenv": "^10.0.0"\n  },\n  "author": "Rohan89283",\n  "license": "ISC"\n}
+{
+  "name": "railway-website",
+  "version": "1.0.0",
+  "description": "Simple Railway Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
