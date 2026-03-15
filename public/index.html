@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jujutsu Kaisen | Rohan_AFK</title>
+  <title>Jujutsu Kaisen AFK | Rohan_AFK</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="particles">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
   <nav>
     <div class="nav-wrap">
-      <a href="index.html" class="logo">JJK AFK</a>
+      <a href="index.html" class="logo">JJK <span>AFK</span></a>
       <ul>
         <li><a href="gojo.html">Gojo</a></li>
         <li><a href="itadori.html">Itadori</a></li>
@@ -20,48 +25,91 @@
   </nav>
 
   <section class="hero">
-    <h1>Jujutsu Kaisen Character Hub</h1>
-    <p>
-      Enter the world of curses, sorcerers, power, and destiny. Explore pages for
-      Satoru Gojo, Yuji Itadori, Ryomen Sukuna, and Megumi Fushiguro in a dark anime-themed website.
-    </p>
-    <a href="gojo.html" class="btn">Enter the Domain</a>
+    <div class="hero-text">
+      <h1>
+        Enter the world of <span class="blue">Jujutsu Kaisen</span>
+      </h1>
+      <p>
+        A dark anime-inspired character hub featuring Satoru Gojo, Yuji Itadori,
+        Ryomen Sukuna, and Megumi Fushiguro. Explore each character page with
+        their own aura, motto, abilities, and theme.
+      </p>
+      <div class="hero-buttons">
+        <a href="#characters" class="btn btn-primary">Explore Characters</a>
+        <a href="gojo.html" class="btn btn-secondary">Start with Gojo</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="six-eyes-ring"></div>
+    </div>
   </section>
 
-  <section class="cards">
-    <div class="card">
-      <img src="images/gojo.jpg" alt="Gojo Satoru" />
-      <div class="card-content">
-        <h2>Gojo Satoru</h2>
-        <p>The strongest sorcerer with unmatched confidence, power, and style.</p>
-        <a href="gojo.html" class="btn">View Page</a>
-      </div>
+  <section class="domain-section">
+    <div class="domain-box">
+      <h2>Domain Expansion</h2>
+      <p>
+        Step into a cursed realm where power, fate, and destruction collide.
+        From the strongest sorcerer alive to the King of Curses himself,
+        every page carries its own energy and presence.
+      </p>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="images/itadori.jpg" alt="Yuji Itadori" />
-      <div class="card-content">
-        <h2>Yuji Itadori</h2>
-        <p>A fearless fighter driven by heart, kindness, and unstoppable spirit.</p>
-        <a href="itadori.html" class="btn">View Page</a>
+  <section class="characters" id="characters">
+    <h2 class="section-title">Featured Characters</h2>
+
+    <div class="characters-grid">
+      <div class="character-card gojo">
+        <img src="images/gojo.jpg" alt="Satoru Gojo" />
+        <div class="card-content">
+          <span class="card-tag">The Strongest Sorcerer</span>
+          <h3>Satoru Gojo</h3>
+          <p>
+            Master of the Limitless technique and the wielder of the Six Eyes,
+            standing above the modern jujutsu world.
+          </p>
+          <a href="gojo.html" class="btn btn-primary">Open Page</a>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="images/sukuna.jpg" alt="Ryomen Sukuna" />
-      <div class="card-content">
-        <h2>Ryomen Sukuna</h2>
-        <p>The King of Curses, ruthless and terrifying, overflowing with deadly power.</p>
-        <a href="sukuna.html" class="btn">View Page</a>
+      <div class="character-card itadori">
+        <img src="images/itadori.jpg" alt="Yuji Itadori" />
+        <div class="card-content">
+          <span class="card-tag">The Cursed Vessel</span>
+          <h3>Yuji Itadori</h3>
+          <p>
+            A kind-hearted fighter with overwhelming physical talent and the
+            burden of housing Sukuna inside him.
+          </p>
+          <a href="itadori.html" class="btn btn-primary">Open Page</a>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="images/megumi.jpg" alt="Megumi Fushiguro" />
-      <div class="card-content">
-        <h2>Megumi Fushiguro</h2>
-        <p>A calm and tactical sorcerer with the mysterious Ten Shadows Technique.</p>
-        <a href="megumi.html" class="btn">View Page</a>
+      <div class="character-card sukuna">
+        <img src="images/sukuna.jpg" alt="Ryomen Sukuna" />
+        <div class="card-content">
+          <span class="card-tag">King of Curses</span>
+          <h3>Ryomen Sukuna</h3>
+          <p>
+            Cruel, ancient, and terrifyingly powerful, Sukuna’s presence alone
+            transforms the battlefield into chaos.
+          </p>
+          <a href="sukuna.html" class="btn btn-primary">Open Page</a>
+        </div>
+      </div>
+
+      <div class="character-card megumi">
+        <img src="images/megumi.jpg" alt="Megumi Fushiguro" />
+        <div class="card-content">
+          <span class="card-tag">Ten Shadows User</span>
+          <h3>Megumi Fushiguro</h3>
+          <p>
+            Quiet, tactical, and deadly when needed, Megumi fights with the
+            mysterious Ten Shadows Technique.
+          </p>
+          <a href="megumi.html" class="btn btn-primary">Open Page</a>
+        </div>
       </div>
     </div>
   </section>
