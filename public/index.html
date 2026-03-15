@@ -27,24 +27,23 @@
         <li><a href="itadori.html">Itadori</a></li>
         <li><a href="sukuna.html">Sukuna</a></li>
         <li><a href="megumi.html">Megumi</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </div>
   </nav>
 
   <section class="hero">
     <div class="hero-text">
-      <h1>
-        Enter the world of <span class="blue">Jujutsu Kaisen</span>
-      </h1>
+      <h1>Enter the world of <span class="blue">Jujutsu Kaisen</span></h1>
       <p>
-        A dark anime-inspired character hub featuring Satoru Gojo, Yuji Itadori,
-        Ryomen Sukuna, and Megumi Fushiguro. Explore each character page with
-        their own aura, motto, abilities, and theme.
+        A premium anime-inspired website featuring Satoru Gojo, Yuji Itadori,
+        Ryomen Sukuna, Megumi Fushiguro, and a custom personal About page for Rohan_AFK.
+        Every page has its own aura, mood, and character theme.
       </p>
 
       <div class="hero-buttons">
         <a href="#characters" class="btn btn-primary">Explore Characters</a>
-        <a href="gojo.html" class="btn btn-secondary">Start with Gojo</a>
+        <a href="about.html" class="btn btn-secondary">About Rohan_AFK</a>
         <a href="#" class="btn btn-secondary" id="expandBtn">Domain Expansion</a>
       </div>
     </div>
@@ -60,9 +59,9 @@
     <div class="domain-box">
       <h2>JJK Theme Portal</h2>
       <p>
-        Step into a cursed realm where power, fate, and destruction collide.
-        From the strongest sorcerer alive to the King of Curses himself,
-        every page carries its own energy, design, and presence.
+        Step into a cursed realm where power, strategy, destruction, and fate collide.
+        Browse each character page, explore detailed themes, and visit the custom profile
+        section built for Rohan_AFK.
       </p>
     </div>
   </section>
@@ -77,8 +76,8 @@
           <span class="card-tag">The Strongest Sorcerer</span>
           <h3>Satoru Gojo</h3>
           <p>
-            Master of the Limitless technique and the wielder of the Six Eyes,
-            standing above the modern jujutsu world.
+            Master of the Limitless technique and the Six Eyes, standing above
+            the modern jujutsu world with impossible confidence.
           </p>
           <a href="gojo.html" class="btn btn-primary">Open Page</a>
         </div>
@@ -90,8 +89,8 @@
           <span class="card-tag">The Cursed Vessel</span>
           <h3>Yuji Itadori</h3>
           <p>
-            A kind-hearted fighter with overwhelming physical talent and the
-            burden of housing Sukuna inside him.
+            A kind-hearted fighter with immense physical power and the burden
+            of carrying Sukuna inside him.
           </p>
           <a href="itadori.html" class="btn btn-primary">Open Page</a>
         </div>
@@ -103,8 +102,8 @@
           <span class="card-tag">King of Curses</span>
           <h3>Ryomen Sukuna</h3>
           <p>
-            Cruel, ancient, and terrifyingly powerful, Sukuna’s presence alone
-            transforms the battlefield into chaos.
+            Cruel, ancient, and terrifyingly dominant, Sukuna transforms every
+            battlefield into a stage for destruction.
           </p>
           <a href="sukuna.html" class="btn btn-primary">Open Page</a>
         </div>
@@ -116,8 +115,8 @@
           <span class="card-tag">Ten Shadows User</span>
           <h3>Megumi Fushiguro</h3>
           <p>
-            Quiet, tactical, and deadly when needed, Megumi fights with the
-            mysterious Ten Shadows Technique.
+            Quiet, sharp, and tactical, Megumi fights with discipline, mystery,
+            and deadly control.
           </p>
           <a href="megumi.html" class="btn btn-primary">Open Page</a>
         </div>
@@ -129,17 +128,9 @@
     © 2026 Rohan_AFK
   </footer>
 
-  <button class="music-btn" id="musicBtn" title="Music">🎵</button>
-
-  <audio id="bgMusic" loop>
-    <source src="music/jjk-theme.mp3" type="audio/mpeg" />
-  </audio>
-
   <script>
     const expandBtn = document.getElementById("expandBtn");
     const overlay = document.getElementById("domainOverlay");
-    const musicBtn = document.getElementById("musicBtn");
-    const bgMusic = document.getElementById("bgMusic");
 
     expandBtn.addEventListener("click", function (e) {
       e.preventDefault();
@@ -147,20 +138,6 @@
       setTimeout(() => {
         overlay.classList.remove("active");
       }, 2200);
-    });
-
-    musicBtn.addEventListener("click", async function () {
-      try {
-        if (bgMusic.paused) {
-          await bgMusic.play();
-          musicBtn.textContent = "⏸";
-        } else {
-          bgMusic.pause();
-          musicBtn.textContent = "🎵";
-        }
-      } catch (err) {
-        alert("Upload a music file at public/music/jjk-theme.mp3 first.");
-      }
     });
   </script>
 </body>
